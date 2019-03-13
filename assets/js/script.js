@@ -39,6 +39,7 @@ function getDataWiki(searchTerm){
        console.log("Wiki:");
        console.log(data);
        console.log(data.query.searchinfo.totalhits + " articles found");
+       let results = data.query.search;
        for (let i=0; i < results.length; i++){
         console.log(results[i].title);
        }
