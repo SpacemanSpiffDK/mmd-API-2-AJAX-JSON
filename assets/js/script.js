@@ -4,7 +4,10 @@
 // This code is for educational purposes
 // All code decision are based on the current level of the students
 
-let NASAkey = DEMO_KEY;
+let NASAkey = "DEMO_KEY";
+
+let NASAurl = "https://api.nasa.gov/planetary/apod";
+let wikiUrl = "https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=";
 
 window.onload = function(){
     getDataNASA();
@@ -24,7 +27,7 @@ function getDataNASA(){
        console.log(data.url);
       }
     };
-    xhttp.open("GET", `https://api.nasa.gov/planetary/apod?api_key=${NASAkey}`, true);
+    xhttp.open("GET", `${NASAurl}?api_key=${NASAkey}`, true);
     xhttp.send();
 }
 
@@ -45,6 +48,6 @@ function getDataWiki(searchTerm){
        }
       }
     };
-    xhttp.open("GET", `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${searchTerm}`, true);
+    xhttp.open("GET", `${wikiUrl}${searchTerm}`, true);
     xhttp.send();
 }
