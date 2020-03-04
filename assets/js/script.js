@@ -1,5 +1,5 @@
 // JS by Dan Høegh
-// UCN MMD 2019
+// UCN MMD 2020
 
 // This code is for educational purposes
 // All code decision are based on the current level of the students
@@ -13,7 +13,7 @@ getDataNASA();
 getDataWiki("David Braben");
 
 function getDataNASA(){
-    var xhttp = new XMLHttpRequest();
+    const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
        // we're ok, lets get the data
@@ -31,7 +31,7 @@ function getDataNASA(){
 
 
 function getDataWiki(searchTerm){
-    var xhttp = new XMLHttpRequest();
+    const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
        // we're ok, lets get the data
