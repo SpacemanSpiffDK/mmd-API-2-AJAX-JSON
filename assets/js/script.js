@@ -4,6 +4,9 @@
 // This code is for educational purposes
 // All code decision are based on the current level of the students
 
+// DANISH:  https://www.youtube.com/watch?v=VLvweih3yfk
+// ENGLISH: https://www.youtube.com/watch?v=NiGj9OIxHcU
+
 let NASAkey = "DEMO_KEY";
 
 let NASAurl = "https://api.nasa.gov/planetary/apod";
